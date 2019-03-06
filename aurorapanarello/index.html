@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="etnacomix.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 class="pigna" >Aurora Panarello</h1>
+                  <h3 class="pigna" >studentessa</h3>
+                  <h4 class="pigna" >Sono una ragazza estroversa e socievole e amo tutto ciò che riguarda l'arte</h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" href="https://www.instagram.com/a_lunatic_me/">Instagram! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+            
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Scuola</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Tipo scuola 1</li>
+                      <li class="doveed">IIS IT G Marconi Catania</li>
+                      <li class="descrizioneed">Istituto tecnico industriale, frequento l'indirizzo "CAT":costruzione ambiente e territorio (vecchio geometra)</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Lingue</h2>
+                  <ul class="lingueli">
+                      <li>Italiano (madrelingua) <span class="lang-desc">(Native)</span></li>
+                      <li>Inglese (B1 cambridge level) <span class="lang-desc">(Professional)</span></li>
+                      <li>Francese (minimo)<span class="lang-desc">(Beginner)</span></li>
+                  </ul>
+              </div>
+
+              <ul class="musica">
+                  <h2 class="section title">Musica</h2>
+                    <li class="doveed"> queste sono le mie canzoni preferite che esprimono un po' i generi di musica che seguo</li>
+                      <li><a href="https://www.youtube.com/watch?v=hZJIani9r7A"> iRobot </a></li>
+                      <li> <a href="https://www.youtube.com/watch?v=pOf3kYtwASo"> Do It Like A Dude </a></li>
+                      <li><a href="https://www.youtube.com/watch?v=5abamRO41fE"> Psychosocial </a></li>
+                      <li><a href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ"> Bohemian Rhapsody </a></li>
+                      <li><a href="https://www.youtube.com/watch?v=fU0ozMxR710"> Ti Scatterò Una Foto </a></li>
+              </ul>
+
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>Sono nata a Catania il 5 Giugno del 2003. Sono una ragazza solare che tende a fidarsi molto delle persone, che reputo sia un pregio che un difetto. Ho pochi amici però quelli che ho sono il massimo. Amo disegnare, ascoltare musica, leggere, scrivere e creare planimetrie. Può sembrare strano ma è una cosa che mi affascina molto, è così sin da quand'ero piccola. Ho scelto un'indirizzo tecnico perchè mi piacciono le materie che si studiano e anche perchè potrei avere più sbocchi lavorativi.</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">sogni e Desideri</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>mi piacerebbe diventare architetto. perchè l'idea di poter "creare" dal nulla, o anche solo ricostruire", mi affascina</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>ho sempre avuto una passione per i LEGO, infatti, uno dei miei sogni è quello di andare a lavorare per la LEGO</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>un altro sogno è quello di unire i miei desideri e creare il più grande edificio calpestabile in LEGO in Sicilia</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-4 pass1">
+                        <img src="https://images6.alphacoders.com/656/thumb-1920-656029.png" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Non sono sicura di come mi sia appassionata tanto agli anime, so solo che ora sono il mio unico modo per staccare dalla vita quotidiana.
+                        Gli anime sono un pò il mio "mondo di riserva" nella qualemirifugio ogni volta che ne ho la possibilità infatti mi definisco un'<a href="https://www.nerdgazmo.it/otaku-significato/">otaku</a></p>
+                    </div>
+                    <div class="col-sm-4 pass2">
+                      <img src="https://i.imgur.com/YH9gHTW.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>parliamo ora di una delle mie passioni più grandi: i gatti. Per me sono gli animali più belli che esistano. questo mio amore ha una storia dietro e vorrei dire che prima, fino a qualche anno fa, non riuscivo neanche a stare vicino ad un'animale. quando avevo 6 anni mia madre mi regalò il mio primo animale, una gatta davvero stupenda che ha fatto sbocciare in me quet'amore. Ora come ora lei ha 9 anni ed è la mia bimba</p>
+                    </div>
+                    <div class="col-sm-4 pass2">
+                      <img src="https://banner2.kisspng.com/20180623/vlc/kisspng-edgar-allan-poe-medo-classico-it-a-novel-book-a-edgar-allan-poe-5b2dd1152c0827.1445765015297293011804.jpg" class="img-thumbnail img-responsive" max-width="200">
+                      <p>La lettura. La lettura è un'altra delle mie passioni. Amo leggere specialmente i Thriller e gli Horror. Uno dei miei scrittori preferiti è <a href="https://it.wikipedia.org/wiki/Edgar_Allan_Poe"> Edgar Allan Poe </a></p>
+                    </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>

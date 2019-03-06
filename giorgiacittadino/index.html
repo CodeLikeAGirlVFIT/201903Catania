@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="ciao.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Giorgia Cittadino</h1>
+                  <h3 >studentessa</h3>
+                  <h4 class="ciao">Testarda e creativa. Penso sia il mix giusto per una bomba esplosiva di emozioni contrastanti.</h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" href="https://www.instagram.com/giorgia_cittadinoo/">instagram! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Scuola</li>
+                      <li class="doveed">i.t.i Marconi</li>
+                      <li class="descrizioneed">faccio l'industriale, si lo so cosa stai pensando scuola prettamente maschile, ma fa niente a me piace cosi. Cambiamole regole. !</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>so a stento l'italiano <span class="lang-desc">(Native)</span></li>
+                      <li> so benissimo il catanese <spam class="lang-desc">(Native)</span></li>
+                      <li> sto cercando di imparare l'inglese <spam class="lang-desc">(learning)</span></li>
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p> Ho 15 anni e sono una ragazza abbastanza complicata e strana per certi versi.Mi piace stare con gli amici e ritengo che fare siti web come hobby sia molto divertente.Frequento il corso cat(costruzioni,ambiente e territorio) e sono al secondo anno.</p>
+                  </div>
+              </section>
+
+
+
+              <section class="serie tv preferite">
+                <h2 class="section-title">serie tv preferite</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog2">
+                      <p><img src="sherlock.jpg"  class="img-thumbnail img-responsive" max-width="200"><br>
+                        La mia serie tv preferita è Sherlock Holmes, mi piace tanto perchè lui risolve casi rendendo fondamentali i dettagli e secondo me guardare i dettagli è una cosa che dovremmo imparare tutti noi.</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p><img src="limitless.jpg" class="img-thumbnail img-responsive" max-width="200"><br>
+                      la mia seconda serie preferita in assoluto è limitless, è sempre una serie concentrata sui casi di polizia. In pratica parla di una "droga" in grado di far usare a una persona tutta la sua intelligenza</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p><img src="lacasadicarta2.jpg" class="img-thumbnail img-responsive" max-width="200"><br>
+                        la mia terza serie tv preferita è la casa di carta. In  effeti non c'entra nulla con il mio genere di serie però anche questa mi ha tenuto impegnata per un certo periodo di tempo. Parla di un colpo fatto alla zecca di stato della Spagna.</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="calcio.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Una delle mie più grandi passioni è il calcio. Vado pazza per la Juventus, questa passione mi è stata tramandata da mio padre già da quando ero piccola. Diciamo che già a 3 anni correvo per casa quando la juve faceva un goal.</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="vinile.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>un'altra passione che mi è stata tramandata da mio padre è la musica, ma la musica con la m mauiscola. Amo ascoltarla soprattutto con il vinile. Il mio cantante preferito è ed sheeran, infatti ho comprato tutti i suoi album in formato vinile.</p>
+                    </div>
+
+                  </div>
+
+              </section>
+
+              <section class="La mia musica">
+                <h2 class="section-title">La mia musica</h2>
+                <div class="row">
+
+                  <div class="col-sm-6 ">
+<iframe src="https://open.spotify.com/embed/album/6ZG5lRT77aJ3btmArcykra" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>  <br>        I coldplay sono il mio gruppo preferito, è il mio genere di POP </p>
+                  </div>
+                  <div class="col-sm-6">
+                      <p><img src="" class="img-thumbnail img-responsive" max-width="200">
+    <iframe src="https://open.spotify.com/embed/album/3N4MScsa0qCfg0ffZVl7wj" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>      Tiziano Ferro è il mio cantante preferito italiano. Le sue canzoni sono poesia.      </p>
+                  </div>
+
+                </div>
+
+              </section>
+          </div>
+      </div>
+    </div>
+</body>
+</html>

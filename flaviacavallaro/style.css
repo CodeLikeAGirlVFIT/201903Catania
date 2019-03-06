@@ -1,0 +1,108 @@
+/**************
+Qui modifico tutto il body del mio html
+**************/
+
+body{
+  background-color:#ececec;
+  background-image:url('trama 4.gif');
+  background-repeat:no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+  font-family: 'Srisakdi', cursive;
+
+}
+
+
+/**************
+Qui vado a definire il contenirore del mio contenuto
+**************/
+.ciao{
+  font-family: 'Srisakdi', cursive;
+font-family: 'Indie Flower', cursive;
+}
+
+.maincontainer{
+  background-color: rgba(255,255,255, 0.5);
+  color: inherit;
+}
+
+
+
+/**************
+intestazione
+**************/
+
+.jumbotron{ /*se volessi modificare lo sfondo della parte alta della pagina, dovrei scrivere qui*/
+background-color:#69afc6;
+
+}
+
+.intestazione h1{
+  font-size:30pt;
+  font-weight:bold;
+}
+
+
+.intestazione h3{
+  font-size:20pt;
+  font-style:italic;
+}
+
+.intestazione h4{
+  font-size:15pt;
+}
+
+.intestazione .cta{
+  color:#ffffff;
+  padding-bottom:10pt;
+}
+
+/****************
+sezione educazione
+**********/
+
+
+.education{
+  list-style-type: none;
+  font-family:georgia;
+}
+
+.nomeed{
+  font-weight: bold;
+}
+
+.doveed{
+  font-style: italic;
+}
+.btn-lg
+{background-color:#60d7ff;
+border-color: #60d7ff; }
+.btn-lg:hover
+{background-color: #ddfffb;
+border-color: #ddfffb;}
+.passione{
+  font-size: 15pt;
+font-family:georgia;
+}
+.passione2{
+  font-size: 15pt;
+font-family:georgia;
+}
+.summary{
+    font-size: 15pt;
+  font-family:georgia;
+}
+.film1{
+  font-size: 15pt;
+font-family:georgia;
+}
+.film2{
+  font-size: 15pt;
+font-family:georgia;
+}
+.film3{
+  font-size: 15pt;
+font-family:georgia;
+}

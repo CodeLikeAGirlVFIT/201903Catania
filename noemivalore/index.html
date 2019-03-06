@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="me.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Noemi Valore</h1>
+                  <h3 >studentessa</h3>
+                  <h4>Mi presento! Sono Noemi, una ragazza di 14 anni con tanti sogni!
+                      Frequento un istituto tecnico-industriale e ogni tanto aiuto mia sorella nel lavoro. </h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" >Bottone! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="twitterlink" target="_blank"  >@twitter</a></li>
+                      <li><a href="instagramlink" target="_blank"  >@instagram</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">La canzone che ha un significato importante per me: </h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Just the way you are</li>
+                      <li class="doveed"></li>
+                      <li class="descrizioneed">Questa canzone ho iniziato ad ascoltarla perchè mi fa ricordare la persona più importante della mia vita, per la quale avrei dato me stessa.. </li>
+                      <li class="descrizioneed">Ma..è davvero brutto quando quello che prima era la tua realtà ora diventa solo un ricordo.</li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+
+-->
+
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">Vi parlo un po' di me!</h2>
+                  <div class="summary">
+                      <p>Sono una ragazza solare, molto divertente e simpatica, pronta a parlare di tutto!
+                        Ragiono con razionalità, so capire.
+                        Il rispetto reciproco non deve mai mancare.
+                        Non sono ingenua, al contrario molto sveglia.
+                        Non mi abbatto e affronto qualsiasi situazione con il sorriso.
+                        Per quanto riguarda la fiducia..beh,sono molto diffidente..ma se mi dimostri lealtà questo e altro!
+                        Sono molto sicura di me e mi ritengo una persona molto matura.
+                        Ho tante potenzialità, so quanto valgo e ho voglia di apprendere e imparare da chi è migliore di me! </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Film Preferiti:</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                    <img src="Titanic.jpg"  class="img-thumbnail img-responsive" max-width="200">
+                      <p> Titanic </p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                    <img src="io.jpg"  class="img-thumbnail img-responsive" max-width="200">
+
+                      <p> Io prima di te </p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                    <img src="colpa.jpg"  class="img-thumbnail img-responsive" max-width="200">
+
+                      <p>Colpa delle stelle</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passioni</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="ballo.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>Il ballo per me è la cura di tutti i mali! Soprattutto emotivi!
+                           Non vivrei senza.</p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="scritt.jpg" class="img-thumbnail img-responsive" max-width="200">
+                   <p>Il potersi esprimere è una delle cose più belle.
+                      Poter parlare senza usare la voce.
+
+                            </p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
