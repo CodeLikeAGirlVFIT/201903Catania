@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="bts.jpg">
+                </div>
+                <div class="col-sm-6">
+                  <h1 >Louna Hurrhungee</h1>
+                  <h3 >studentessa</h3>
+                  <h4>When you're happy you enjoy the music when you're sad you understand the lyrics </h4>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" href="https://www.instagram.com/lounahurrhungee/">Instagram! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="twitterlink" target="_blank"  >@twitter</a></li>
+                      <li><a href="instagramlink" target="_blank"  >@instagram</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title">Education</h2>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">College School</li>
+                      <li class="doveed">Notre Dame College</li>
+                      <li class="descrizioneed">Notre Dame College is a school of same girls, i had past 5 years in this school and its was great.My favourite day in this school is my first lessson of guitare with my friends and also The Sport day.</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul class="education">
+                      <li class="nomeed">Institute technical</li>
+                      <li class="doveed">Istituto Tecnico Industriale Statale G.Marconi</li>
+                      <li class="descrizioneed">It is a very interesting school and what i really like about this institute is that they have many course that you can choose.</li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="lingue">
+                  <h2 class="section-title">Languages</h2>
+                  <ul class="lingueli">
+                      <li>Italian <span class="lang-desc">(beginner)</span></li>
+                      <li>England<span class="lang-desc">(Professionel)</span></li>
+                      <li>France <span class="lang-desc">(Professionel)</span></li>
+
+                  </ul>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">About me</h2>
+                  <div class="summary">
+                      <p>I'm from Mauritius and i live in Italian since 2017.I attend the Intitute Technical G.Marconi.I love playing guitare and piano i'm not a professional but i can play some notes. </p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title">Progetti</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>First i want to go to Manchester to aee my favourite team of football</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Iwant to go to Korea to meet new ppeople the learn about the culture and eat their food.</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>My dream is i want to do parachuting with my cousin.</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title">Passions</h2>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="koreandrama.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>One of my passions is to watch korean drama.One of the my favourite descendants of th sun is like a romance drama.</p>
+                        <a href="https://www.viki.com/tv/23205c-descendants-of-the-sun">viki</a>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="images.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <p>I like watching france tele reality called Les Marseillais is like they went in place aroung the world.</p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
