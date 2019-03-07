@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-6">
+                  <img class="img-thumbnail img-responsive" max-width="300" src="https://media.giphy.com/media/l3q2QD5U9zTlij2V2/giphy.gif">
+                </div>
+                <div class="col-sm-6">
+                  <h1> Fabiola Buccheri </h1>
+                  <br>
+                  <h2> studentessa</h3>
+                  <br>
+                  <h3> Sono un essere diversamente umano </h3>
+
+
+                  <br><br><br>
+
+                  <p class="cta"><a class="btn btn-primary btn-lg" href="bottone.html">Bottone inutile! &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+              <!--
+              I miei contatti
+              -->
+
+              <div class="contact-container container-block">
+                  <ul class="list contact-list">
+                      <li><a href="notwitter.html" target="_blank"  >@twitter</a></li>
+                      <li><a href="instagram.html" target="_blank"  >@instagram</a></li>
+                  </ul>
+              </div>
+
+
+
+              <!--
+              I miei studi
+              -->
+
+              <div class="studi">
+                  <h2 class="section-title"><font color="#6966c1"> Education</h2> </font>
+
+
+                  <!-- Elemento 1-->
+                  <ul class="education">
+                      <li class="nomeed">Isituto tecnico industriale</li>
+                      <li class="doveed">G. Marconi</li>
+                      <li class="descrizioneed">In questa scuola studio le materie inerenti all'informatica</li>
+                  </ul>
+
+                  <!-- Elemento 2-->
+
+                  <ul class="education">
+                      <li class="nomeed">Languages</li>
+                      <li class="descrizioneed"> Inglese </li>
+                      <li class="descrizioneed">Italiano</li>
+                      <li class="descrizioneed">Italiano</li>
+                      <li class="descrizioneed">L'ho già detto italiano?</li>
+                  </ul>
+              </div>
+
+              <div class="lingue">
+                  <h2 class="section-title"><font color="#6966c1">Hobby</h2></font>
+                  <ol class="lingueli" type="I">
+                      <li> Mangiare <span class="lang-desc"></li>
+                      <li> Dormire <span class="lang-desc"></li>
+                      <li> Netflix <span class="lang-desc"></li>
+                      <li> Leggere <span class="lang-desc"></li>
+                      <li> Videogames <span class="lang-desc"></li>
+                      <li> Dare fastidio alle persone <span class="lang-desc"></li>
+                      <li> Danza <span class="lang-desc"></li>
+                      <li> Musica <span class="lang-desc"></li>
+                      <li> Skate <span class="lang-desc"></li>
+                      <li> Calcio <span class="lang-desc"></li>
+                </ol>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title"><font color="#6966c1"> About me</h2> </font>
+                  <div class="summary">
+                      <p>Mi piace ironizzare, creare siti web; nel tempo libero vago per la città con lo skate oppure faccio attività fisica.</p>
+                  </div>
+              </section>
+
+
+
+              <section class="progetti">
+                <h2 class="section-title"><font color="#6966c1"> Progetti</h2></font>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>La mia intenzione è di proseguire i miei studi sempre in ambito informatico, in particolare nel web designer.</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Durante gli studi vorrei cercare dei lavori part-time per poter iniziare a guadagnare qualcosa.</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>Mi piacerebbe viaggiare e visitare più città possibili.</p>
+                  </div>
+
+                </div>
+
+              </section>
+
+              <section class="passioni">
+                  <h2 class="section-title"><font color="#6966c1"> Passioni</h2></font>
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="https://giornaledicomo.it/media/2017/10/skate.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <h5>Se le cose non vanno come vorresti, puoi arrenderti o cercare un modo migliore per farle.</h5>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFf4zaNR0IT-Wr9uJKNHPc-jZLBWurHDCISK7blqJiKJ__EVKaqg" class="img-thumbnail img-responsive" max-width="200">
+                        <h5>Quando non puoi danzare tu, fai danzare la tua anima.</h5>
+                    </div>
+                    <div class="col-sm-6 pass1">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJbKrwMtw2_fZdVPuDp21g-XZqguO1DgEcAR24nyDrLPjSMO4cgg" class="img-thumbnail img-responsive" max-width="200">
+                        <h5>Correre, competere, è nel mio sangue, fa parte della mia vita.</h5>
+                    </div>
+                    <div class="col-sm-6 pass1">
+                        <img src="https://baraondanews.it/wp-content/uploads/2019/02/cerebro-notas-musicales.jpg" class="img-thumbnail img-responsive" max-width="200">
+                        <h5>Senza musica la vita sarebbe un errore.</h5>
+                    </div>
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
