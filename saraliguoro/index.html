@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+
+<!---------------------------------
+HEAD
+le informazioni sull'intestazione della pagina
+----------------------------------->
+
+
+<head>
+    <!-- TITOLO -->
+    <title>CV Template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!-- CSS AGGIUNTIVO -->
+    <!-- NB il CSS che referenzio dopo sovrascrive quello che referenzio prima
+    quindi se chiamo delle classi nello stesso modo del primo nel secondo CSS
+    le sovrascrivo solo per quegli attributi che definisco
+  -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!---------------------------------
+BODY
+Il contenuto della pagina
+----------------------------------->
+<body>
+
+
+    <div class="container maincontainer">
+
+
+      <!---------------------------------
+      INTESTAZIONE
+      In questa sezione l'intestazione della pagina visibile; possiamo mettere uno sfondo, o regolarne la grandezza con il CSS
+      ----------------------------------->
+
+
+        <div class="jumbotron"> <!------------ qui se provate a riscrivere la classe jumbotron nel file style.css, potreste aggiungere uno sfondo per esempio-->
+            <!--
+            I miei dati
+            Qui possiamo inserire una nostra foto, il nostro nome e un titolo
+            -->
+            <div class="row intestazione">
+                <!--
+                usando il template di bootstrap, questa immagine, la nostra foto, ha i bordi ed e' responsive
+                -->
+                <div class="col-sm-4">
+                  <img class="img-thumbnail img-responsive" max-width="100" src="miaimmagine.jpeg">
+                </div>
+                <div class="col-sm-8 testodec">
+                  <h1 >Sara Liguoro</h1>
+                  <h3 >"nessun maggior dolore che ricordarsi del tempo ne la miseria"</h3>
+                  <h4 >-Dante, V canto</h4>
+
+                  <br><br><br>
+
+                  <p class="btn btn-primary btn-lg"><a class="cta" ><a style="color:white" href="https://it.wikisource.org/wiki/Divina_Commedia/Inferno/Canto_V">Leggi il canto &raquo;</a></a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!---------------------------------
+        COLONNA: col1
+        questo e' il primo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col1 e scrivendo CSS specifico, posso modificare la sua apparenza
+        -->
+
+
+
+        <div class="row">
+        <div class="col-sm-4">
+
+          <div class="container col1">
+
+
+
+
+
+
+
+              <div class="studi">
+                  <h2 class="section-title"></h2>
+
+
+                  <h4 class="section-title">Libri preferiti</h4>
+                  <ul class="education">
+                      <li class="doveed">Bianca come il latte rossa come il sangue;</li>
+                      <li class="doveed">Il grande Gatsby;</li>
+                      <li class="doveed">Le pagine della nostra vita.</li>
+                  </ul>
+
+                  <h4 class="section-title">Cantanti preferiti</h4>
+                  <ul class="education">
+                      <li class="doveed">Marracash;</li>
+                      <li class="doveed">Jess Glynne;</li>
+                      <li class="doveed">Queen.</li>
+                  </ul>
+
+                  <h4 class="section-title">Serie tv preferite</h4>
+                  <ul class="education">
+                      <li class="doveed">Bates Motel;</li>
+                      <li class="doveed">La casa di carta;</li>
+                      <li class="doveed">Merlin.</li>
+                  </ul>
+              </div>
+
+
+
+
+
+              <!--
+              Lingue che parlo
+              -->
+
+              <div class="social">
+                  <h4 class="section-title">Social</h4>
+                  <ul class="social">
+                        <li><a href="https://www.facebook.com/sara.liguoro" target="_blank"  >@facebook</a></li>
+                        <li><a href="https://www.instagram.com/sara.lig/?hl=it" target="_blank"  >@instagram</a></li>
+                  </ul>
+                    <img width="50%" height="50%"src='gif4.gif'>
+              </div>
+
+
+
+
+          </div>
+        </div>
+
+        <!---------------------------------
+        COLONNA: col2
+        questo e' il secondo div con alcune sezioni al suo interno
+        utilizzando il nome della sua classe col2 e scrivendo CSS specifico, posso modificare la sua apparenza
+        ----------------------------------->
+
+        <div class="col-sm-8">
+          <div class="container col2">
+
+              <section class="section summary-section">
+                  <h2 class="section-title">Me</h2>
+                  <div class="summary">
+                      <p>Ciao, mi chiamo Sara e ho 18 anni, sono una studentessa e frequento l'istituto tecnico industriale G. Marconi di Catania; le mie passioni sono gli animali, in particolar modo i gatti, e la fotografia.</p>
+                  </div>
+              </section>
+
+
+
+              <!----------<section class="progetti">
+                <h2 class="section-title">Progetti</h2>
+                <div class="row">
+
+                  <div class="col-sm-4 prog1">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+                  <div class="col-sm-4 prog2">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+                  <div class="col-sm-4 prog3">
+                      <p>Io sono l'esempio di un progetto, qui puoi inserire immagini e descrizioni e link</p>
+                  </div>
+
+                </div>
+-------->
+              </section>
+
+              <section class="passioni">
+                <!--  <h2 class="section-title">Passioni</h2>-->
+
+                  <div class="row">
+                    <div class="col-sm-6 pass1">
+                        <img src="gattosuona.gif" class="img-thumbnail img-responsive" max-width="200">
+                        <p><em>"La musica e i gatti sono ottimo rifugio dalle miserie della vita."</em></p>
+                        <p><em>-Albert Schweitzer</em></p>
+                    </div>
+                    <div class="col-sm-6 pass2">
+                      <img src="giffoto.gif" class="img-thumbnail img-responsive" max-width="200">
+                        <p><em>"Le fotografie possono raggiungere l’eternità attraverso il momento."</em></p>
+                        <p><em>-Henri Cartier-Bresson</em></p>
+                    </div>
+
+                  </div>
+              </section>
+
+
+          </div>
+      </div>
+    </div>
+</body>
+</html>
