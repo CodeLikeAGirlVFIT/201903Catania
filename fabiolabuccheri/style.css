@@ -1,0 +1,79 @@
+body{
+  background-image:url('sfondo.jpg');
+  background-repeat:no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.maincontainer{
+  background-color: rgba(255,255,255, 0.5);
+  color: inherit;
+}
+
+.jumbotron{
+            background-color: rgba(214, 229, 252);
+
+}
+
+.intestazione h1{
+  font-family: 'Josefin Sans';
+  font-size:30pt;
+  color:#217f43;
+  font-weight:bold;
+}
+
+
+.intestazione h2{
+  font-family: 'Anton';
+  font-size:20pt;
+  font-style:italic;;
+}
+
+.intestazione h3{
+  font-family: 'exo 2';
+  font-size:20pt;
+  color:#217f43;
+}
+
+.intestazione h4{
+  font-family: 'abel';
+  font-size:10pt;
+  color:#217f43;
+}
+
+.intestazione .cta{
+  color:#ffffff;
+  padding-bottom:10pt;
+  font-family: 'abel';
+}
+.hobby
+    {
+      color:#1b4eba;
+      font-family: 'abel';
+    }
+.passioni {
+            color:#bf1125;
+            font-family: 'Lobster', cursive;
+}
+.education{
+  font-family: 'Abel', sans-serif;;
+color:#044eed;
+
+}
+
+.lingueli {
+  font-family: 'Abel', sans-serif;
+  color:#044eed;
+}
+
+.nomeed{
+  font-weight: bold;
+}
+
+.doveed{
+  font-style: italic;
+}
+
+p {color:#090089;
+font-family: 'Indie Flower', cursive;}
